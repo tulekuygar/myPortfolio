@@ -415,12 +415,12 @@ form .btn2 {
 }
 
 .modal-content {
-  color: black;
-  background-color: #fefefe;
+  color: whitesmoke;
+  background-color: black;
   margin: 15% auto;
   margin-bottom: 50px;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid whitesmoke;
   width: 80%;
   
 }
