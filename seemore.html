@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylepage.css" />
+    <script
+      src="https://kit.fontawesome.com/8f8e76fa5c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" href="Images/OIP2.jpg" type="image/x-icon" />
+    <title>See More</title>
+  </head>
+  <body class="body">
+    <div id="headers">
+      <div class="contanier">
+        <nav>
+          <img src="Images/duzguns.png" alt="Uygar icon" class="logo" />
+          <div class="contaniernav nav">
+            <ul>
+              <li>
+                <a href="#Product">My<span> Products</span> </a>
+              </li>
+              <li>
+                <a href="#Project">My<span> Projects</span> </a>
+              </li>
+              <li>
+                <a href="mainpage.html"
+                  >Take Me Back
+                  <i class="fa-solid fa-door-open" style="color: #d00707"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <nav class="header-text text">
+        <p>Welcome To See More</p>
+        <h1>
+          This page contains <em><q>detailed</q></em
+          ><br />
+          information about my products and projects.
+        </h1>
+      <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2><span>Will</span> Continue</h2>
+    <p>The site is not <span>finished</span>. It is in the prototype phase.</p>
+  </div>
+</div>
+
+
+      </nav>
+    </div>
+
+    <!-- ----My Product ----- -->
+
+    <div id="about">
+      <div class="contanier">
+        <div class="row">
+          <!-- <div class="projects">
+            <img
+            src=""
+            alt="tabnine"
+            width="693"
+            height="517"/> -->
+          
+          <div class="about2">
+          <div id="Project">
+          <h1 class="suptitle">Projects</h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aliquam velit molestiae,
+             quibusdam nesciunt repellat.
+            Nihil exercitationem sit incidunt error provident repudiandae magni vitae deleniti eius corporis, 
+            nisi, tenetur accusamus?</p>
+            
+            <div class="tabtitle">
+              <p class="tab-links active-link" onclick="opentab('Tabnine')"> Tabnine </p>
+              <p class="tab-links" onclick="opentab('Nissan')">
+                Nissan
+              </p>
+              <p class="tab-links" onclick="opentab('Mac')">Macintosh</p>
+            </div>
+
+            <div class="work">
+            <div class="tab-contents active-tab" id="Tabnine">
+            <ul>
+              <div class="about1">
+              <img src="Images/Tabininess.jpg" alt=""/>
+              </div>
+              <div class="layer">
+              <div class="black">            
+              <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque maxime totam modi corrupti dignissimos assumenda mollitia omnis odit? Omnis volup
+                tate nisi ullam unde obcaecati ipsum tempore sapiente possimus, optio quod!
+              </li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia doloribus tenetur est nulla maxime velit porro! Ipsa nemo commodi facere quasi dolore nulla hic aliquam. Explicabo ratione alias porro voluptatum?
+              </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+          </div> 
+          <li style="list-style: armenian;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas error esse dolores distinctio veniam fuga! Perferendis, earum nesciunt esse praesentium natus atque, dolores, quidem quia suscipit quam adipisci laudantium?</li>
+
+            <div class="tab-contents" id="Nissan">
+              <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam sunt, distinctio ducimus culpa ab neque porro eveniet veritatis omnis modi officia consectetur temporibus quidem sint rem, provident, molestias voluptatibus.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quis unde dolore doloribus tempore optio maiores iusto recusandae voluptatum impedit ipsa, eum perspiciatis minus? Corporis tenetur cum dolor. Commodi, molestiae?
+                  </li>
+                </ul> 
+            </div>
+            <div class="tab-contents" id="Mac">
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem molestiae, quia mollitia similique sapiente iusto quis quae quos, atque, obcaecati dicta tenetur minima laudantium voluptatem numquam ipsum dolorem nam ducimus!
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum laboriosam obcaecati ex officia possimus qui molestiae debitis beatae architecto doloribus quas, magnam nam amet quo error doloremque explicabo ipsa magni?
+                </li>
+              </ul>
+            </div>
+            </div>
+            </div>  
+          </div>
+      </div>
+    </div>
+
+
+      <!-- JavaScript  -->
+      <script>
+        var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+window.onload = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+        </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
